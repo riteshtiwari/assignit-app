@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_friendlist_footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/row_friendlist_footer_linearlayput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row_friendlist_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_friendlist_share_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:padding="8dp"
+            android:src="@drawable/share_icon" />
+
+        <com.assignit.android.ui.views.CustomTextView
+            android:id="@+id/tv_friendlist_share"
+            style="@style/row_friendlist_textview_footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="13dp"
+            android:text="@string/share_with_friends" />
+    </LinearLayout>
+
+</RelativeLayout>

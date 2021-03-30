@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/rlHomeActivity"
+    android:background="@color/home_background" >
+    
+     <com.assignit.android.ui.views.TabView
+         android:id="@+id/tabView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+         
+    <ListView
+        android:id="@+id/mFriendsListView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabView"
+        android:layout_marginLeft="@dimen/app_list_margin"
+        android:layout_marginRight="@dimen/app_list_margin"
+        android:clickable="false"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:dividerHeight="@dimen/app_list_margin"
+        android:divider="@android:color/transparent"
+        android:focusable="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+    
+    
+     <ListView
+        android:id="@+id/mFromMeListView"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tabView"
+        android:layout_marginLeft="@dimen/app_list_margin"
+        android:layout_marginRight="@dimen/app_list_margin"
+        android:clickable="false"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:dividerHeight="@dimen/app_list_margin"
+        android:divider="@android:color/transparent"
+        android:focusable="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        android:visibility="gone"
+        />
+     
+     
+      <ListView
+        android:id="@+id/mForMeListView"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tabView"
+        android:layout_marginLeft="@dimen/app_list_margin"
+        android:layout_marginRight="@dimen/app_list_margin"
+        android:clickable="false"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:dividerHeight="@dimen/app_list_margin"
+        android:divider="@android:color/transparent"
+        android:focusable="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:scrollingCache="false" 
+        android:visibility="gone" />
+      
+      <com.assignit.android.ui.views.CustomTextView
+        android:id="@+id/noMatchFoundView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="@string/no_match_found"
+        android:textColor="@color/login_page_colore" 
+        android:visibility="gone"/>
+   
+</RelativeLayout>

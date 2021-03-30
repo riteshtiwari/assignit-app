@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.assignit.android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <org.taptwo.android.widget.ViewFlow
+            android:id="@+id/mViewFlow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:sidebuffer="3" >
+        </org.taptwo.android.widget.ViewFlow>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp" >
+
+            <com.assignit.android.ui.views.CustomButton
+                android:id="@+id/btnPrevious"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:visibility="gone"
+                android:background="@drawable/selector_btn_previous" />
+
+            <com.assignit.android.ui.views.CustomButton
+                android:id="@+id/skipTutorial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_btn_skip" />
+
+            <com.assignit.android.ui.views.CustomButton
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_btn_next" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

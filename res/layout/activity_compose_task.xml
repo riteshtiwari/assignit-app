@@ -1,0 +1,180 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/composeTaskScrollView"
+    android:background="@android:color/white"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:id="@+id/rlmainComposeTask"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:id="@+id/llmaincompose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.assignit.android.ui.views.CustomEditText
+                android:id="@+id/taskDescription"
+                style="@style/compostask_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_copmpose_task_detail"
+                android:capitalize="sentences"
+                android:gravity="left"
+                android:hint="@string/et_compose_task_hint"
+                android:maxLength="150"
+                android:padding="10dp"
+                android:textColor="@color/color_compostask_edit_text" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/selectImageView"
+                        android:layout_width="250dp"
+                        android:layout_height="160dp"
+                        android:src="@drawable/selector_select_image"
+                        android:scaleType="fitCenter"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="8dp"
+                         />
+
+                    <ImageView
+                        android:id="@+id/removeImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/selectImageView"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="15dp"
+                        android:background="@drawable/ic_reject"
+                        android:visibility="gone" />
+
+                    <com.assignit.android.ui.views.CustomTextView
+                        android:id="@+id/compostaskSelectImageTextView"
+                        style="@style/compostask_select_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="80dp"
+                        android:text="@string/select_image"
+                        android:textColor="@color/color_compostask_check_box" />
+                </RelativeLayout>
+
+                <com.assignit.android.ui.views.CustomCheckBox
+                    android:id="@+id/cbNoDueDate"
+                    style="@style/compostask_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/selector_checkbox"
+                    android:paddingLeft="30dp"
+                    android:text="@string/cb_no_due_date"
+                    android:textColor="@color/color_compostask_check_box" />
+
+                <com.assignit.android.ui.views.CustomCheckBox
+                    android:id="@+id/cbDoItToday"
+                    style="@style/compostask_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/selector_checkbox"
+                    android:paddingLeft="30dp"
+                    android:text="@string/cb_do_it_today"
+                    android:textColor="@color/color_compostask_check_box" />
+
+                <com.assignit.android.ui.views.CustomCheckBox
+                    android:id="@+id/cbDoItAnyTime"
+                    style="@style/compostask_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/selector_checkbox"
+                    android:paddingLeft="30dp"
+                    android:text="@string/cb_do_it_anytime_in_the_week"
+                    android:textColor="@color/color_compostask_check_box" />
+
+                <com.assignit.android.ui.views.CustomCheckBox
+                    android:id="@+id/cbSetDueDate"
+                    style="@style/compostask_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/selector_checkbox"
+                    android:paddingLeft="30dp"
+                    android:text="@string/cb_set_a_due_date"
+                    android:textColor="@color/color_compostask_check_box" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSetdeudate"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                layout="@layout/row_deudatelist_start" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                layout="@layout/row_deudatelist_end" />
+
+            <LinearLayout
+                android:id="@+id/llReapetDeuDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    layout="@layout/row_deudatelist_repeat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llEndReapetDeuDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    layout="@layout/row_deudatelist_end_repeat" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

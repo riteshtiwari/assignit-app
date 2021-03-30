@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/home_background" >
+
+    <ListView
+        android:id="@+id/mExitingTaskView"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/app_list_margin"
+        android:layout_marginRight="@dimen/app_list_margin"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:clickable="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/app_list_margin"
+        android:focusable="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+
+</RelativeLayout>

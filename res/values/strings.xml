@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Please put all the toasts msgs in one line and in rectangular fashion and not in square. -->
+    <string name="app_name">assignIt</string>
+    <string name="app_id">700666499973325</string>
+    <!-- <string name="app_id">426105920823425</string> -->
+    <string name="action_settings">Settings</string>
+    <string name="button_ok">OK</string>
+    <string name="task_created_msg">Task Assigned</string>
+    <string name="button_set">Set</string>
+    <string name="button_no">No</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_now">Now</string>
+    <string name="button_never">Never</string>
+    <string name="button_later">Later</string>
+    <string name="evernote_save_onsuccess">Note saved successfully</string>
+    <string name="evernote_save_onerror">Error saving notes</string>
+    <string name="save_note_image">Saving notes with image</string>
+    <string name="save_note">Saving notes</string>
+    <string name="get_code_onsuccess">You should have received a text with the security code. Please type that code in the box below to proceed further.</string>
+    <string name="button_facebook_login"><![CDATA[Sign in with <b>Facebook</b> ]]></string>
+    <string name="login_note">Note: Your task(s) shall not be linked with your Facebook account in any way.</string>
+    <string name="login_btn_facebook">Sign in with Facebook </string>
+    <string name="rate_message">If you enjoy using this app, please take a moment to rate it. Thanks for your support!</string>
+<string name="play_store_link">https://play.google.com/store/apps/details?id=com.assignit.android&amp;hl=en</string>
+    <!-- Home Screen Text -->
+    <string name="tab_from_me">FROM ME</string>
+    <string name="tab_friends">All FRIENDS</string>
+    <string name="tab_for_me">FOR ME</string>
+    <string name="search_friends">Search</string>
+    <string name="search_task">Search Task</string>
+    <string name="send_app_request_title">Send App Request</string>
+    <string name="send_app_request_message"> AssignIt And Forget It ! Simple way to Assign, Follow, Finish and Convey your Tasks. </string>
+    <string name="app_request_sucsess">Download Request Sent.</string>
+    <string name="msg_invite_text">Check out AssignIt for your smartphone. Download it today from </string>
+    <string name="email_invite_text"><![CDATA[Hey, <br /><br /> I just downloaded AssignIt on my smartphone.<br /><br />It is a simple task assignment and tracking app. Now you can assign and follow up on simple day-2-day tasks. <br /><br />AssignIt is available for Android, iPhone and there is no PIN or username to remember - it works just like SMS and uses your internet data plan. <br /><br /> Get it now from  ]]></string>
+ 	<string name="email_invite_text_end">and take the burden off your head !</string>
+   	<string name="email_invite_subject">AssignIt For Android + Iphone</string>
+   	<string name="share_chooser_text">Share Assignit..</string>
+    <!-- Menu  Text -->
+    <string name="menu_invite">Invite</string>
+    <string name="menu_invite_all">Invite All</string>
+    <string name="menu_new_task">New Task</string>
+    <string name="menu_existing_task">Existing Task</string>
+    <string name="session_has_expired">Access Token Expired !</string>
+    <string name="menu_exit_application">Exit App</string>
+    <string name="menu_notification_enable">Notification is Enabled</string>
+    <string name="menu_notification_disable">Notification is Disabled</string>
+    <string name="exit_appication_title">Exit App</string>
+    <string name="exit_appication_enabled_message">You shall still receive notification(s) as Notification is Enabled.\nSure to Exit the App ?</string>
+    <string name="exit_appication_disabled_message">You shall not receive notification(s) as to Notification is Disabled.\nSure to Exit the App ?</string>
+    <string name="notification_enable_message">Enable Notification(s) ?</string>
+    <string name="notification_disable_message">Disable Notification(s) ?</string>
+    <string name="notification_enable">Enable Notifications</string>
+    <string name="notification_disable">Disable Notifications</string>
+    <string name="friend_all">All Friends</string>
+    <string name="friend_frequent">Frequent</string>
+    <string name="friend_existing">Existing</string>
+    <string name="select_dat">Select a Date</string>
+    <string name="select_time">Select a Time</string>
+    <string name="one_time">One Time</string>
+
+    <!-- Font details -->
+    <string name="roboto_condensed">Roboto-Condensed</string>
+    <string name="roboto_light">Roboto-Light</string>
+    <string name="roboto_medium">Roboto-Medium</string>
+    <string name="roboto_regular">Roboto-Regular</string>
+
+    <!-- compose task -->
+    <string name="self_user">Self</string>
+    <!-- we can make this more if we have space. -->
+    <string name="et_compose_task_hint">Task Description (Max 150 chars)</string>
+    <string name="cb_no_due_date">No Due Date</string>
+    <string name="cb_do_it_today">Do It Today</string>
+    <string name="cb_do_it_anytime_in_the_week">Do It Any Time This Week</string>
+    <string name="cb_set_a_due_date">Set A Due Date And Time</string>
+    <string name="select_image">Select Attachment (if any)</string>
+    <string name="composetask_exit_mesaage">Exit Without Saving ? </string>
+    <string name="composetask_exit_edit_mesaage">Exit Without Saving ?</string>
+    <string name="task_discard_title">Task Discard</string>
+    <string name="discard_changes">Discard Changes</string>
+
+    <string-array name="choose_image">
+        <item>Camera</item>
+        <item>Gallery</item>
+    </string-array>
+
+    <string name="unattached_title">Clear Attachment</string>
+    <string name="unattached_message">Remove Attachment ?</string>
+
+    <!-- Replace "X" with whatever the value is. -->
+    <string name="select_image_big_size_message">Image Size too Big. Max-X mb</string>
+
+    <!-- GCM -->
+    <string name="error_config">Please Set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+
+    <!-- From Me Screen -->
+    <string name="task_to">To</string>
+    <string name="task_menu_edit">Edit</string>
+    <string name="task_menu_delete">Delete</string>
+    <string name="task_menu_reminder">Send Reminder</string>
+    <string name="task_update_success_fully">Task Updated.</string>
+    <string name="task_assigned_to">Task Assigned To </string>
+    <string name="task_deleted_success_fully">Task Assigned To %1$s Deleted.</string>
+    <string name="task_deleted_failed">Task Deletion Failed !</string>
+    <string name="task_send_reminder_sucess_fully">Task Reminder Sent.</string>
+    <string name="task_send_reminder_failure">Task Reminder Failed !</string>
+    <string name="task_send_reminder_already">One Reminder Already Pending.</string>
+    <string name="task_reminder_title">Task Reminder</string>
+    <string name="task_reminder_message">Send Reminder ?</string>
+    <string name="task_menu_evernote">Add to Evernote</string>
+    <string name="task_menu_go_to_evernote">Go to Evernote</string>
+    <string name="task_menu_add_reminder">Add to Reminder</string>
+    <string name="task_menu_edit_reminder">Edit Reminder</string>
+
+    <!-- Existing Task -->
+    <string name="existing_task_facebook_name">Task For </string>
+
+    <!-- For Me -->
+    <string name="task_from">From</string>
+    <string name="task_menu_accept">Accept</string>
+    <string name="task_menu_reject">Reject</string>
+    <string name="task_menu_complete">Completed</string>
+    <string name="task_menu_inprogress">In Progress</string>
+    <string name="task_deleted_success_fully_for_me">Task Assigned From %1$s Is Now Deleted.</string>
+    <string name="task_deleted_failed_for_me">Task Deletion Failed !</string>
+    <string name="task_accepted_success_fully">Task Accepted.</string>
+    <string name="task_accepted_failed">Task Acceptance Failed ! </string>
+    <string name="task_inprogress_success_fully">Task Marked In Progress.</string>
+    <string name="task_inprogress_failed">Task Marking \"In Progress\" Failed !</string>
+    <string name="task_completed_success_fully">Task Completed.</string>
+    <string name="task_completed_failed">Task Marking \"Completed\" Failed !</string>
+    <string name="task_rejected_success_fully">Task Rejected.</string>
+    <string name="task_rejected_failed">Task Marking \"Rejected\" Failed !</string>
+
+    <!-- Common Message -->
+    <string name="no_internate_connetion"> Check Network Connection !</string>
+    <string name="time_out_connetion"> Server Timeout Please Try After Sometime</string>
+    <string name="no_friends_found">No Friends Found !</string>
+    <string name="date_picker_error"> Pick A Valid Date !</string>
+    <string name="time_picker_error"> Pick A Valid Time !</string>
+    <!-- Loading Progress bar  Message -->
+    <string name="loading_updateing_contacts">Updating Contacts…</string>
+    <string name="loading_login_message">Loading…</string>
+    <string name="loading_friend_list_message">Loading All Friends List…</string>
+    <string name="loading_from_task_message">Loading FromMe Tasks…</string>
+    <string name="loading_exist_task_message">Loading Existing Tasks…</string>
+    <string name="loading_for_me_task_message">Loading ForMe Tasks…</string>
+    <string name="loading_assign_task">Assigning The Task…</string>
+    <string name="loading_update_task">Updating The Task…</string>
+    <string name="refresh_friend_list_message">Refreshing List…</string>
+    <string name="refresh_fromMe_list_message">Refreshing FromMe Tasks…</string>
+    <string name="refresh_exist_list_message">Refreshing Existing Tasks…</string>
+    <string name="refresh_forMe_list_message">Refreshing ForMe Tasks…</string>
+    <string name="no_match_found">No Match Found</string>
+    <string name="option_menu_unavailable">Task Deleted, Swipe to Clear</string>
+    <string name="delete_task_dialog_title">Delete Task</string>
+    <string name="notification_msg">Notification</string>
+    <string name="delete_task_dialog_message">Are you sure you want to delete?</string>
+
+    <!-- Toast -->
+    <string name="enter_description">Enter Description</string>
+    <string name="dialog_task_warning_title">Task Warning</string>
+    <string name="dialog_task_warning_message">Change In Progress Task ?</string>
+
+    <!-- New Added -->
+    <string name="enter_name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="verify_code">Code</string>
+    <string name="get_code">Get Code</string>
+    <string name="err_activity_not_found">Unknown intent</string>
+    <string name="country_code">+</string>
+    <string name="share_with_friends">Share With Friends</string>
+    <string name="title">Note Title</string>
+    <string name="content">Note Content</string>
+    <string name="empty_content_error">Note title and content cannot be empty</string>
+    <string name="note_saved">Note saved to Evernote</string>
+    <string name="label_select_notebook_button">Select Notebook</string>
+    <string name="label_save_button">Save</string>
+    <string name="error_listing_notebooks">Error listing notebooks</string>
+   <!--  <string name="error_create_task">Error Creating Tasks</string> -->
+    <string name="error_creating_notestore">Error creating notestore</string>
+    <string name="error_saving_note">Error saving note</string>
+    <string name="error_listing_notes">Error listing note</string>
+    <string name="name_char_length">Name must be minimum 2 characters!</string>
+    <string name="phone_char_empty"> Please enter phone number!</string>
+    <string name="phone_char_length">Phone number must be minimum 7 digits!</string>
+    <string name="verify_char_length">Verification code must be minimum 4 digits!</string>
+    <string name="name_char_empty"> Please enter name!</string>
+    <string name="invalid_code">Invalid code! Please check.</string>
+    <string name="deudate_start">Starts</string>
+    <string name="deudate_end">Ends</string>
+    <string name="deudate_repeat">Repeat</string>
+    <string name="deudate_end_repeat">End Repeat</string>
+    <string name="deudate_repeat_never">Never</string>
+    <string name="deudate_repeat_everyday">Every day</string>
+    <string name="deudate_repeat_everyweek">Every Week</string>
+    <string name="deudate_repeat_everytwoweek">Every 2 Week</string>
+    <string name="deudate_repeat_everymonth">Every Month</string>
+    <string name="deudate_repeat_everyyear">Every Year</string>
+    <string name="deudate_repeat_cancel">Cancel</string>
+    <string name="deudate_repeat_set">Set</string>
+    <string name="dialog_box_error_title">Alert</string>
+    <string name="no_task">No Task Found!</string>
+    <string name="dialog_box_getcode_title">Verification Code</string>
+    <string name="dialog_box_record_update">Contacts List</string>
+
+    <string-array name="repeat_item">
+        <item>Never</item>
+        <item>Every Day</item>
+        <item>Every Week</item>
+        <item>Every 2 Week</item>
+        <item>Every Month</item>
+        <item>Every Year</item>
+    </string-array>
+    <string-array name="end_repeat_item">
+        <item>Never</item>
+        <item>Set Date</item>
+    </string-array>
+
+    <string name="title_activity_search_screen">SearchScreenActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- evernote -->
+    <string name="err_creating_note">Error creating new Evernote note</string>
+    <string name="msg_image_saved">Image saved to Evernote</string>
+    <string name="label_app_title">Evernote EDAM Android Demo</string>
+    <string name="label_select_button">Select Image</string>
+    <string name="label_message">No image selected</string>
+    <string name="label_save_button">Save</string>
+    <string name="err_image_selected">Select Image</string>
+    <string name="err_retrieving_resource">Error retrieving resource</string>
+    <string name="msg_retrieved_resource">Retrieved resource from server</string>
+    <string name="esdk__loading">Loading...</string>
+    <string name="esdk__pick_notebook">Pick a notebook</string>
+    <string name="label_login">Login</string>
+    <string name="label_logout">Sign out</string>
+    <string name="label_search">Search</string>
+    <string name="esdk__image_picker">Image Picker</string>
+    <string name="esdk__simple_note">Simple Note</string>
+    <string name="esdk__search_notes">Search notes</string>
+    <string name="label_select_notebook_button">Select Notebook</string>
+    <string name="title">Note Title</string>
+    <string name="content">Note Content</string>
+    <string name="empty_content_error">Note title and content cannot be empty</string>
+    <string name="note_saved">Note saved to Evernote</string>
+    <string name="notes_searched">Searching notes has finished</string>
+    <string name="ok">Ok</string>
+    <string name="simple_note">Simplenote</string>
+    <string name="image_picker">Image Picker</string>
+    <string name="search_notes">Search Notes</string>
+    <string name="search_hint">Search notes</string>
+    <string name="error_listing_notebooks">Error listing notebooks</string>
+    <string name="error_creating_notestore">Error creating notestore</string>
+    <string name="error_saving_note">Error saving note</string>
+    <string name="error_listing_notes">Error listing note</string>
+
+</resources>

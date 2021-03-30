@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- From Me Row text status size -->
+<dimen name="font_size9">9sp</dimen>
+<dimen name="font_size11">11sp</dimen>
+<dimen name="font_size13">13sp</dimen>
+<dimen name="font_size15">15sp</dimen>
+
+
+</resources>

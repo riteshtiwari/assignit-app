@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	
+    <!--  login screen top and bottom margin -->
+     <dimen name="activity_login_middle_margin">10dp</dimen>
+	<dimen name="activity_login_top_margin">30dp</dimen>
+	<dimen name="activity_login_bottom_margin">40dp</dimen>
+	
+	 <!--  Application Body Margin -->
+	 <dimen name="app_list_margin">8dp</dimen>
+</resources>

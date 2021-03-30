@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="font_1">HelveticaNeue-Bold</string>
+    <string name="font_2">MyriadPro-Regular_1</string>
+    <string name="font_3">HelveticaNeueLT Light</string>
+    <string name="font_4">HelveticaLTStd Roman</string>
+
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
+    <color name="menu_item_font_color">#000000</color>
+     <color name="menu_item_existing_counter">#FFA800</color>
+     <color name="selected_friend_color">#FFA800</color>
+    <dimen name="menu_item_font_size">15sp</dimen>
+    
+    
+    
+</resources>

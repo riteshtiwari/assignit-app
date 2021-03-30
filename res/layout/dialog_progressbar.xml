@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_progressbar"
+    android:padding="10dp"
+    android:gravity="center" >
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.assignit.android.ui.views.CustomTextView
+        android:id="@+id/progressbar_textview_message"
+        style="@style/progressbarTextviewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:textIsSelectable="true" />
+
+</LinearLayout>

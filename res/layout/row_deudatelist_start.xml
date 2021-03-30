@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_friendlist"
+    android:layout_width="match_parent"
+    android:background="@drawable/row_friendlist_bg"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+
+        <com.assignit.android.ui.views.CustomTextView
+            android:id="@+id/tv_deudatelist_title"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold"
+            android:gravity="left" 
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            style="@style/repeat_deudate_textview"
+            android:text="@string/deudate_start" />
+
+        <com.assignit.android.ui.views.CustomTextView
+            android:id="@+id/tvStartDatePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tvStartTimePicker"
+            style="?android:attr/spinnerStyle"
+            android:gravity="left" 
+            android:clickable="true"
+            android:textColor="@color/home_selected_friendlist" />
+
+        <com.assignit.android.ui.views.CustomTextView
+            android:id="@+id/tvStartTimePicker"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/home_selected_friendlist" 
+            style="?android:attr/spinnerStyle"
+            android:gravity="left" />
+    
+
+</RelativeLayout>

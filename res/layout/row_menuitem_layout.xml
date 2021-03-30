@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.assignit.android"
+    android:id="@+id/popUpWindow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="left|center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/menuItemImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp" />
+
+    <com.assignit.android.ui.views.CustomTextView
+        android:id="@+id/menuIteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:gravity="center|center_horizontal"
+        android:textAlignment="center"
+        android:textColor="#555555"
+        app:font_type="@string/roboto_medium" />
+
+    <com.assignit.android.ui.views.CustomTextView
+        android:id="@+id/menuItemCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/menu_item_existing_counter"
+        app:font_type="@string/roboto_medium" />
+
+</LinearLayout>

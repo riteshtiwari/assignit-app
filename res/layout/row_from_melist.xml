@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.assignit.android"
+    android:id="@+id/row_from_melist"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/row_from_me_bg"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:id="@+id/row_from_melist"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <com.assignit.android.ui.views.AnimatedTextView
+            android:id="@+id/mTaskNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/home_page_row_enable"
+            android:textSize="@dimen/font_size13"
+            app:font_type="@string/roboto_light" />
+        
+        
+         <com.assignit.android.ui.views.CustomTextView
+            android:id="@+id/mTestView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/home_page_row_enable"
+            android:textSize="@dimen/font_size13"
+            app:font_type="@string/roboto_light" 
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/mPhotoLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/mPhotoFrame"
+                android:layout_width="227dp"
+                android:layout_height="122dp"
+                android:src="@drawable/compose_task_select_image"
+                android:paddingTop="6dp"
+                android:paddingRight="7dp"
+                android:paddingLeft="7dp"
+                android:paddingBottom="8dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:gravity="bottom"
+            android:visibility="visible" >
+
+            <com.assignit.android.ui.views.CustomTextView
+                android:id="@+id/mFromTaskName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/task_to"
+                android:textSize="@dimen/font_size11"
+                app:font_type="@string/roboto_light" />
+
+            <com.assignit.android.ui.views.CustomTextView
+                android:id="@+id/mAssignedView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:singleLine="true"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/font_size11"
+                app:font_type="@string/roboto_regular" />
+
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right" >
+				<LinearLayout 
+				    android:layout_width="73dp"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="left">
+                <com.assignit.android.ui.views.CustomTextView
+                    android:id="@+id/mStatusView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_new_bg"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textColor="@color/color_new"
+                    android:textSize="@dimen/font_size9"
+                    app:font_type="@string/roboto_regular" />
+				</LinearLayout>
+                <com.assignit.android.ui.views.CustomTextView
+                    android:id="@+id/mDueDateView"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_date"
+                    android:textSize="@dimen/font_size11"
+                    app:font_type="@string/roboto_light" />
+               
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/mTaskStatusView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/selector_friendlist_menu" />
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_friendlist"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+
+    <LinearLayout
+        android:id="@+id/row_friendlist_linearlayput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row_friendlist_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_mark_image"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:contentDescription="@null"
+            android:padding="3dp" />
+
+        <com.assignit.android.ui.views.CustomTextView
+            android:id="@+id/tv_countrylist_country_name"
+            style="@style/row_friendlist_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:textColor="@color/home_page_row_disable" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.assignit.android.ui.views.CustomTextView
+            android:id="@+id/tv_countrylist_country_code"
+            style="@style/row_friendlist_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:textColor="@color/home_page_row_disable" />
+    </LinearLayout>
+
+</RelativeLayout>

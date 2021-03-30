@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.assignit.android"
+    android:id="@+id/base_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/linearlayput1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_home_top_bar"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/home_screen_serch_view_outer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/baseHeaderBackArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/base_header_back_arrow"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/home_screen_serch_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:contentDescription="@null"
+                    android:id="@+id/base_heder_serch_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/home_serch_screen_logo" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ln_home_serch_box_bg"
+                    android:gravity="center" >
+
+                    <com.assignit.android.ui.views.CustomEditText
+                        android:id="@+id/etSearchBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/search_friends"
+                        android:imeOptions="actionDone"
+                        android:inputType="textNoSuggestions"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:id="@+id/cleareSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="3dp"
+                        android:background="@drawable/selector_search_clear" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/base_header_imageview_home_logo_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/base_header_imageview_home_logo_img"
+                android:visibility="gone" />
+
+            <ImageView
+                android:contentDescription="@null"
+                android:id="@+id/composeTaskPprofilePicImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/compose_task_profile_pic_background"
+                android:padding="3dp"
+                android:src="@drawable/compose_task_profile_pic"
+                android:visibility="gone" />
+
+            <com.assignit.android.ui.views.CustomTextView
+                android:id="@+id/mFriendsNameView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="9dp"
+                android:singleLine="true"
+                android:textSize="@dimen/font_size15"
+                android:visibility="gone"
+                app:font_type="@string/roboto_condensed" />
+
+            <Spinner
+                android:id="@+id/base_header_spinner_select_frd"
+                style="@style/row_spinner_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="8dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/btnBaseHeaderButtonSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_button_serch"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/btnBaseHeaderButtonRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_button_referesh" />
+
+            <ImageView
+                android:id="@+id/btnBaseHeaderButtonDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_button_delete"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/btnBaseHeaderButtonNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_button_next"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/base_activity_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearlayput1"
+        android:background="#0000FF" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+</RelativeLayout>

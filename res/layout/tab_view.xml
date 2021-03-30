@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tab_bg" >
+
+    <com.assignit.android.ui.views.CustomButton
+        android:id="@+id/tabBtnFromMe"
+        style="@style/home_tab_style"
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_tab_btn_from_me"
+        android:text="@string/tab_from_me"
+        android:textColor="@color/home_page_tab_colore" />
+
+    <com.assignit.android.ui.views.CustomButton
+        android:id="@+id/tabBtnFriends"
+        style="@style/home_tab_style"
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:text="@string/tab_friends"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_tab_btn_friends"
+        android:textColor="@color/color_black" />
+
+    <com.assignit.android.ui.views.CustomButton
+        android:id="@+id/tabBtnForMe"
+        style="@style/home_tab_style"
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_tab_btn_for_me"
+        android:text="@string/tab_for_me"
+        android:textColor="@color/home_page_tab_colore" />
+
+</LinearLayout>

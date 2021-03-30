@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_friendlist"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/row_friendlist_linearlayput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/row_friendlist_bg" >
+
+        <com.assignit.android.ui.views.CustomTextView
+            android:id="@+id/tv_deudatelist_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+             android:textStyle="bold"
+            android:gravity="left" 
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+             style="@style/repeat_deudate_textview"
+            android:text="@string/deudate_end_repeat" />
+
+        <com.assignit.android.ui.views.CustomTextView
+            android:id="@+id/tvDeudateEndRepeat"
+            style="@style/row_friendlist_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_deudatelist_time_picker"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="@string/deudate_repeat_never"
+             android:textColor="@color/home_selected_friendlist"  />
+
+        <ImageView
+            android:id="@+id/tv_deudatelist_time_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_action_next_item" />
+    </RelativeLayout>
+
+</RelativeLayout>

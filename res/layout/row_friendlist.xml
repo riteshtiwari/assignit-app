@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.assignit.android"
+    android:id="@+id/row_friendlist"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/row_friendlist_bg"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/row_for_friendlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/row_friendlist_linearlayput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/img_friendlist_profile_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_header_imageview_home_profile_pic"
+                android:padding="3dp"
+                android:src="@drawable/img_friendlist_default_profile_pic" />
+
+            <com.assignit.android.ui.views.CustomTextView
+                android:id="@+id/tv_friendlist_friend_name"
+                style="@style/row_friendlist_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_weight="95"
+                android:clickable="false"
+                android:focusable="false"
+                android:textColor="@color/home_selected_friendlist" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:contentDescription="@null"
+                android:id="@+id/btn_friendlist_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/selector_friendlist_menu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuviewLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:orientation="vertical"
+             >
+
+            <LinearLayout
+                android:id="@+id/newTaskLayout"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_item_new_task_logo"
+                    android:paddingLeft="5dp" />
+
+                <com.assignit.android.ui.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/menu_new_task"
+                    android:textAlignment="center"
+                    android:textColor="#555555"
+                    app:font_type="@string/roboto_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/existTaskLayout"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_item_existing_task_logo"
+                    android:paddingLeft="5dp" />
+
+                <com.assignit.android.ui.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/menu_existing_task"
+                    android:textAlignment="center"
+                    android:textColor="#555555"
+                    app:font_type="@string/roboto_medium" />
+
+                <com.assignit.android.ui.views.CustomTextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/existingItemCounter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:font_type="@string/roboto_medium"
+                    android:textColor="@color/menu_item_existing_counter" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

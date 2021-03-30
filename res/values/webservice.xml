@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="base_url">http://assignci.innoppldesigns.com/index.php/</string>
+    
+    <string name="registration">api/v1/getCode</string>
+    <string name="login">api/v1/login</string>
+    <string name="contact_upload">api/v1/updateContactDetails</string>
+    <string name="friend_details">api/v1/getFriendDetails</string>
+    <string name="assign_task">api/v1/assignTask</string>
+    <string name="edit_task">api/v1/assignTask</string>
+    <string name="get_task_for_me">api/v1/getTasksForMe</string>
+    <string name="get_task_from_me">api/v1/getTasksFromMe</string>
+    <string name="update_task_status">api/v1/changeTaskStatus</string>
+    <string name="delete_task">api/v1/deleteTask</string>
+    <string name="remind_task">api/v1/remindTask</string>
+    <string name="existing_task">api/v1/existingTask</string>
+    <string name="add_reminder">api/v1/addReminder</string>
+    <string name="add_evernote">api/v1/addEvernote</string>
+    <string name="go_to_evernote">https://www.evernote.com/Login.action?targetUrl=%2FHome.action</string>
+    <string name="crash_report_url">http://www.innoppldesigns.com/project-logs/log.php</string>
+    <string name="rate_app">market://details?id=</string>
+    <string name="update_device_token">api/v1/update_token</string>
+    
+    
+ <!--     <string name="consumer_key">itramji-7896</string>
+      <string name="consumer_secret">a373782b71491dbf</string> -->
+       <string name="consumer_key">rtiwari</string>
+      <string name="consumer_secret">57d1a59060324f08</string>
+   
+</resources>

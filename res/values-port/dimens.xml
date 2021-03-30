@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	
+    <dimen name="activity_login_top_margin">125dp</dimen>
+     <dimen name="activity_login_bottom_margin">200dp</dimen>
+     <dimen name="activity_login_middle_margin">60dp</dimen>
+      <item type="bool" name="isLandscape">false</item>
+     
+     <!--  Application Body Margin -->
+	 <dimen name="app_list_margin">8dp</dimen>
+</resources>
